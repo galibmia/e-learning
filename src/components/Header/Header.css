@@ -1,7 +1,7 @@
-.bg-color-header{
-
-    background-color: #140342;
+.navbar{
     color: white;
+    width: 100% !important;
+    /* border-bottom: 1px solid gray; */
 }
 
 .navbar a{
@@ -15,5 +15,9 @@
 
 .navbar hr{
     display: none;
-    border: 2px solid white;
+    border: 1px solid white;
+}
+.hr{
+    display: block !important;
+    margin-top: 10px;
 }

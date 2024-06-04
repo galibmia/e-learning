@@ -1,13 +1,16 @@
 import React from 'react';
 import ActiveLink from '../ActiveLink/ActiveLink';
 import "./Header.css"
+import { Link } from 'react-router-dom';
+
 
 
 const Header = () => {
     return (
-        <nav className='w-full px-10 py-4 md:px-24 flex justify-between items-center bg-color-header navbar'>
+        <nav className='px-10 py-4 md:px-52 navbar fixed top-0 left-0 z-10 w-full hero-bg'>
+            <div className='flex justify-between items-center '>
             <div>
-                <h1 className='text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white'>E-learning</h1>
+                <h1 className='text-2xl font-extrabold leading-none tracking-tight  md:text-3xl lg:text-4xl text-white'>E-learning</h1>
             </div>
             <div className='flex gap-5 items-center'>
                 <ActiveLink to={'/'}>Home</ActiveLink>
@@ -20,6 +23,8 @@ const Header = () => {
             <div className='flex items-center'>
                 <ActiveLink to={'/login'}>Login</ActiveLink>
             </div>
+            </div>
+            <hr className='hr' />
         </nav>
     );
 };
