@@ -1,0 +1,6 @@
+.active{
+    color: rgb(150, 98, 252);
+}
+.active hr{
+    display: block !important;
+}

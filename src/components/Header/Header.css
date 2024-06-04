@@ -1,0 +1,19 @@
+.bg-color-header{
+
+    background-color: #140342;
+    color: white;
+}
+
+.navbar a{
+    padding: 5px 8px;
+    border-radius: 8px;
+}
+
+.navbar a:hover{
+    background-color: #37295E;
+}
+
+.navbar hr{
+    display: none;
+    border: 2px solid white;
+}
