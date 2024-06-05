@@ -6,9 +6,9 @@ const Course = ({ course }) => {
     const { id, courseName, bannerImage, rating, author, duration, price, discount, lessons, reviews, authorImage } = course;
     return (
         <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden">
-            <Link to={`/courses/${id}`} className="block overflow-hidden relative group">
+            <Link to={`/courses`} className="block overflow-hidden relative group">
                 <img className="rounded-t-lg w-full h-48 object-cover transition-transform duration-500 ease-in-out transform group-hover:scale-110" src={bannerImage} alt={courseName} />
-                <div className="absolute inset-0 bg-indigo-800 bg-opacity-0 group-hover:bg-opacity-30 transition duration-500 ease-in-out"></div>
+                <div className="absolute inset-0 bg-indigo-800 bg-opacity-0 group-hover:bg-opacity-60 transition duration-500 ease-in-out"></div>
             </Link>
             <div className="p-4">
                 <div className="flex items-center mb-2">
@@ -16,7 +16,7 @@ const Course = ({ course }) => {
                     <span className="text-yellow-500 font-bold">{rating}</span>
                     <span className="text-gray-600 ml-1">({reviews})</span>
                 </div>
-                <Link to={`/courses/${id}`}>
+                <Link to={`/courses`}>
                     <h5 className="text-xl font-bold tracking-tight text-gray-900">{courseName}</h5>
                 </Link>
                 <div className="flex items-center mt-2 mb-4 text-gray-700">
