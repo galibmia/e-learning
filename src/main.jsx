@@ -15,6 +15,7 @@ import Contact from './components/Contact/Contact.jsx';
 import Login from './components/Login/Login.jsx';
 import SignUp from './components/SignUp/SignUp.jsx';
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,7 +27,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/courses',
-        element: <Courses></Courses>
+        element: <Courses></Courses>,
+        loader: () => fetch('data.json'),
       },
       {
         path: '/events',

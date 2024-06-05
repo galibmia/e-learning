@@ -6,7 +6,10 @@
         "author": "Alice Green",
         "duration": "8 hours",
         "price": 39.99,
-        "discount": 15
+        "discount": 15,
+        "lessons": 6,
+        "reviews": 1991,
+        "category": "Sales"
     },
     {
         "courseName": "Digital Marketing Mastery",
@@ -15,7 +18,10 @@
         "author": "Bob White",
         "duration": "12 hours",
         "price": 59.99,
-        "discount": 20
+        "discount": 20,
+        "lessons": 6,
+        "reviews": 1991,
+        "category": "Sales"
     },
     {
         "courseName": "Advanced Social Media Marketing",
@@ -24,7 +30,10 @@
         "author": "Carol Brown",
         "duration": "10 hours",
         "price": 49.99,
-        "discount": 25
+        "discount": 25,
+        "lessons": 6,
+        "reviews": 1991,
+        "category": "Sales"
     },
     {
         "courseName": "Content Marketing for Growth",
@@ -33,7 +42,10 @@
         "author": "David Black",
         "duration": "9 hours",
         "price": 44.99,
-        "discount": 10
+        "discount": 10,
+        "lessons": 6,
+        "reviews": 1991,
+        "category": "Sales"
     },
     {
         "courseName": "Email Marketing Campaigns",
@@ -42,6 +54,9 @@
         "author": "Eve White",
         "duration": "7 hours",
         "price": 34.99,
-        "discount": 30
+        "discount": 30,
+        "lessons": 6,
+        "reviews": 1991,
+        "category": "Sales"
     }
 ]
