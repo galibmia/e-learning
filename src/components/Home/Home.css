@@ -2,3 +2,6 @@
     color: #00FF84;
     text-decoration: underline;
 }
+.hero-bg-img{
+    background-image: url('../../assets/logo/hero-bg.png');
+}
