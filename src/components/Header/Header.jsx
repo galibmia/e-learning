@@ -22,6 +22,7 @@ const Header = () => {
             </div>
             <div className='flex items-center'>
                 <ActiveLink to={'/login'}>Login</ActiveLink>
+                <button className='button-signUp'><Link to={'/signup'}>Sign Up</Link></button>
             </div>
             </div>
             <hr className='hr' />

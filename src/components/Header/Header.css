@@ -21,3 +21,17 @@
     display: block !important;
     margin-top: 10px;
 }
+.button-signUp{
+    background-color: aliceblue;
+    color: black;
+    padding: 3px 8px;
+    border-radius: 8px;
+    margin-left: 20px;
+    border: 2px solid aliceblue;
+}
+
+.button-signUp:hover{
+    
+    background-color: transparent;
+    color: aliceblue;
+}
