@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <nav className='px-10 py-4 md:px-52 navbar fixed top-0 left-0 z-10 w-full hero-bg'>
+        <nav className='px-10 pt-4 md:px-52 navbar fixed top-0 left-0 z-10 w-full hero-bg'>
             <div className='flex justify-between items-center '>
             <div>
                 <h1 className='text-2xl font-extrabold leading-none tracking-tight  md:text-3xl lg:text-4xl text-white'>E-learning</h1>

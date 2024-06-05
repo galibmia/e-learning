@@ -1,0 +1,28 @@
+.button-login{
+    background-color: #00FF84;
+    color: black;
+}
+.button-login:hover{
+    color: #00FF84;
+    background-color: transparent;
+    border: 2px solid #00FF84;
+}
+.button-login-facebook{
+    color: #1967D2;
+    background-color: transparent;
+    border: 2px solid #1967D2;
+}
+
+.button-login-facebook:hover{
+    background-color: #1967D2;
+    color: aliceblue;
+}
+.button-login-google{
+    color: #D93025;
+    background-color: transparent;
+    border: 2px solid #D93025
+}
+.button-login-google:hover{
+    background-color: #D93025;
+    color: aliceblue;
+}

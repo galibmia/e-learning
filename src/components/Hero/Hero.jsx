@@ -4,7 +4,7 @@ import './Hero.css';
 
 const Hero = () => {
     return (
-        <div className='w-4/5 mx-auto flex items-center mt-20'>
+        <div className='w-4/5 mx-auto flex items-center pt-20'>
             <div className='w-1/2'>
                 <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl text-white">Learn New Skills Online with Top <span className="text-color">Educators</span></h1>
                 <p className="my-8 text-lg font-normal text-white lg:text-xl">Build skills with courses, certificates, and degrees online from
