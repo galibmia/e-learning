@@ -4,7 +4,7 @@ import "./Login.css"
 
 const Login = () => {
     return (
-            <form className="max-w-sm mx-auto mt-32">
+            <form className="max-w-sm mx-auto mt-32 mb-16">
                 <h1 className='text-3xl font-bold mb-3 text-gray-900'>Login</h1>
                 <span className=" my-6 text-sm font-medium "><span className='text-gray-500'>Don't have an account yet? </span><Link to={'/signup'} className='text-blue-800'>Sign up for free</Link></span>
                 <div className="my-5">

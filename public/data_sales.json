@@ -1,0 +1,47 @@
+[
+    {
+        "courseName": "Sales Strategies for Beginners",
+        "bannerImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Sales_graph.png/1200px-Sales_graph.png",
+        "rating": 4.7,
+        "author": "Alice Green",
+        "duration": "8 hours",
+        "price": 39.99,
+        "discount": 15
+    },
+    {
+        "courseName": "Digital Marketing Mastery",
+        "bannerImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Digital_marketing_chart.png/800px-Digital_marketing_chart.png",
+        "rating": 4.8,
+        "author": "Bob White",
+        "duration": "12 hours",
+        "price": 59.99,
+        "discount": 20
+    },
+    {
+        "courseName": "Advanced Social Media Marketing",
+        "bannerImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Social_media_marketing_pyramid.png/1024px-Social_media_marketing_pyramid.png",
+        "rating": 4.9,
+        "author": "Carol Brown",
+        "duration": "10 hours",
+        "price": 49.99,
+        "discount": 25
+    },
+    {
+        "courseName": "Content Marketing for Growth",
+        "bannerImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Content_marketing_pie_chart.png/1024px-Content_marketing_pie_chart.png",
+        "rating": 4.6,
+        "author": "David Black",
+        "duration": "9 hours",
+        "price": 44.99,
+        "discount": 10
+    },
+    {
+        "courseName": "Email Marketing Campaigns",
+        "bannerImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Email_marketing_flowchart.png/1024px-Email_marketing_flowchart.png",
+        "rating": 4.5,
+        "author": "Eve White",
+        "duration": "7 hours",
+        "price": 34.99,
+        "discount": 30
+    }
+]

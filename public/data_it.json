@@ -1,0 +1,47 @@
+[
+    {
+        "courseName": "Introduction to Python",
+        "bannerImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png",
+        "rating": 4.8,
+        "author": "Jane Doe",
+        "duration": "10 hours",
+        "price": 49.99,
+        "discount": 20
+    },
+    {
+        "courseName": "Web Development with JavaScript",
+        "bannerImage": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+        "rating": 4.7,
+        "author": "John Smith",
+        "duration": "15 hours",
+        "price": 59.99,
+        "discount": 15
+    },
+    {
+        "courseName": "Data Science and Machine Learning",
+        "bannerImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/1200px-IBM_logo.svg.png",
+        "rating": 4.9,
+        "author": "Emily Johnson",
+        "duration": "20 hours",
+        "price": 79.99,
+        "discount": 25
+    },
+    {
+        "courseName": "Digital Marketing Essentials",
+        "bannerImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Google_Logo.svg/1200px-Google_Logo.svg.png",
+        "rating": 4.6,
+        "author": "Michael Brown",
+        "duration": "8 hours",
+        "price": 39.99,
+        "discount": 10
+    },
+    {
+        "courseName": "Graphic Design with Photoshop",
+        "bannerImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.png",
+        "rating": 4.5,
+        "author": "Sarah Wilson",
+        "duration": "12 hours",
+        "price": 45.99,
+        "discount": 30
+    }
+]
