@@ -5,12 +5,12 @@
 }
 
 .navbar a{
-    padding: 5px 8px;
+    /* padding: 5px; */
     border-radius: 8px;
 }
 
 .navbar a:hover{
-    background-color: #37295E;
+    color: #00FF84;
 }
 
 .navbar hr{
@@ -20,6 +20,8 @@
 .hr{
     display: block !important;
     margin-top: 10px;
+    width: 80%;
+    margin: 0 auto;
 }
 .button-signUp{
     background-color: aliceblue;
