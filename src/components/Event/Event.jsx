@@ -25,7 +25,7 @@ const Event = ({ event }) => {
                 </div>
                 <button
                     type="submit"
-                    className="text-white btn-primary-color-full outline-none font-bold rounded-lg text-md w-full px-5 py-2.5 text-center"
+                    className="text-white button-join outline-none font-bold rounded-lg text-md w-full px-5 py-2.5 text-center"
                 >
                     Buy Now
                 </button>
