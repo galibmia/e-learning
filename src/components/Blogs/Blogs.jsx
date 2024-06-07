@@ -1,9 +1,10 @@
 import React from 'react';
+import UnderDevelopment from '../UnderDevelopment/UnderDevelopment';
 
 const Blogs = () => {
     return (
-        <div>
-            Blogs
+        <div className='mt-24 my-14'>
+            <UnderDevelopment></UnderDevelopment>
         </div>
     );
 };

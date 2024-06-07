@@ -5,6 +5,7 @@ import TrustedBrand from '../TrustedBrand/TrustedBrand';
 import TopCategories from '../TopCategories/TopCategories';
 import { useLoaderData } from 'react-router-dom';
 import TopCourse from '../TopCourse/TopCourse';
+import PromoSection from '../PromoSection/PromoSection';
 
 const Home = () => {
     // To Display top courses
@@ -24,6 +25,9 @@ const Home = () => {
             </div>
             <div className='my-20'>
                 <TopCourse displayCourses={displayCourses}></TopCourse>
+            </div>
+            <div className='my-20'>
+                <PromoSection></PromoSection>
             </div>
         </div>
     );

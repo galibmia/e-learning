@@ -15,8 +15,8 @@ const TopCategories = () => {
                 <h1 className="text-4xl font-bold mt-5">Top Categories</h1>
                 <p className="text-gray-400 mt-5">Lorem ipsum dolor sit amet, consectetur.</p>
             </div>
-            <div className="flex flex-wrap justify-center gap-10 mt-20">
-                <Link className="category w-full sm:w-1/2 lg:w-1/6 bg-slate-200 p-5 rounded-lg" to="/">
+            <div className="flex flex-wrap justify-center gap-8 mt-20">
+                <Link className="category w-full sm:w-1/2 lg:w-1/6 bg-slate-200 py-5 px-3 rounded-lg" to="/">
                     <div className="flex justify-center flex-col">
                         <div className="bg-white p-4 rounded-full mx-auto mt-5">
                             <img src={icon1} alt="" />
@@ -25,7 +25,7 @@ const TopCategories = () => {
                         <p className="text-center text-gray-500 text-sm mt-5">537+ Courses</p>
                     </div>
                 </Link>
-                <Link className="category w-full sm:w-1/2 lg:w-1/6 bg-slate-200 p-5 rounded-lg" to="/">
+                <Link className="category w-full sm:w-1/2 lg:w-1/6 bg-slate-200 py-5 px-3 rounded-lg" to="/">
                     <div className="flex justify-center flex-col">
                         <div className="bg-white p-4 rounded-full mx-auto mt-5">
                             <img src={icon2} alt="" />
@@ -34,7 +34,7 @@ const TopCategories = () => {
                         <p className="text-center text-gray-500 text-sm mt-5">540+ Courses</p>
                     </div>
                 </Link>
-                <Link className="category w-full sm:w-1/2 lg:w-1/6 bg-slate-200 p-5 rounded-lg" to="/">
+                <Link className="category w-full sm:w-1/2 lg:w-1/6 bg-slate-200 py-5 px-3 rounded-lg" to="/">
                     <div className="flex justify-center flex-col">
                         <div className="bg-white p-4 rounded-full mx-auto mt-5">
                             <img src={icon3} alt="" />
@@ -43,7 +43,7 @@ const TopCategories = () => {
                         <p className="text-center text-gray-500 text-sm mt-5">125+ Courses</p>
                     </div>
                 </Link>
-                <Link className="category w-full sm:w-1/2 lg:w-1/6 bg-slate-200 p-5 rounded-lg" to="/">
+                <Link className="category w-full sm:w-1/2 lg:w-1/6 bg-slate-200 py-5 px-3 rounded-lg" to="/">
                     <div className="flex justify-center flex-col">
                         <div className="bg-white p-4 rounded-full mx-auto mt-5">
                             <img src={icon4} alt="" />
@@ -52,7 +52,7 @@ const TopCategories = () => {
                         <p className="text-center text-gray-500 text-sm mt-5">37+ Courses</p>
                     </div>
                 </Link>
-                <Link className="category w-full sm:w-1/2 lg:w-1/6 bg-slate-200 p-5 rounded-lg" to="/">
+                <Link className="category w-full sm:w-1/2 lg:w-1/6 bg-slate-200 py-5 px-3 rounded-lg" to="/">
                     <div className="flex justify-center flex-col">
                         <div className="bg-white p-4 rounded-full mx-auto mt-5">
                             <img src={icon5} alt="" />
@@ -61,7 +61,7 @@ const TopCategories = () => {
                         <p className="text-center text-gray-500 text-sm mt-5">980+ Courses</p>
                     </div>
                 </Link>
-                <Link className="category w-full sm:w-1/2 lg:w-1/6 bg-slate-200 p-5 rounded-lg" to="/">
+                <Link className="category w-full sm:w-1/2 lg:w-1/6 bg-slate-200 py-5 px-3 rounded-lg" to="/">
                     <div className="flex justify-center flex-col">
                         <div className="bg-white p-4 rounded-full mx-auto mt-5">
                             <img src={icon6} alt="" />
