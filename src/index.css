@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.primary-color{
+    color: #6440FB;
+}
+.secondary-color{
+    color: #00FF84;
+}
 .btn-primary-color-full{
     background-color: #00FF84;
     border: 2px solid #00FF84;
