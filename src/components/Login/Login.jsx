@@ -1,10 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import "./Login.css"
+import { GithubAuthProvider, GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import app from '../../firebase/firebase.init';
+
 
 const Login = () => {
+    const [user, setUser] = useState(null);
+    
+    const auth = getAuth(app);
+    const googleProvider = new GoogleAuthProvider();
+    const githubProvider = new GithubAuthProvider();
+
+    const handleSignUpWithPopUp = (auth, provider) => {
+        signInWithPopup(auth, provider)
+        .then(result => {
+            const user = result.user;
+            console.log(user)
+            setUser(user);
+        })
+        .catch(error => {
+            console.log(error.message);
+        });
+    }
+
+    const handleSignInWithGoogle = () => {
+        handleSignUpWithPopUp(auth, googleProvider);
+    }
+    const handleSignInWithGithub = () => {
+        handleSignUpWithPopUp(auth, githubProvider);
+    }
+
+    const handleSignOut = () => {
+        setUser(null);
+    }
+
     return (
+        
         <div className='w-4/5 md:max-w-sm mx-auto mt-32 mb-16'>
+            {user ? 
+            <div>
+                <h1 className='text-center text-2xl font-semibold'>Hello, {user.displayName}</h1>
+                <p className='text-center mt-5'>You logged in successfully.</p>
+                <button onClick={handleSignOut} className='button-login-google w-full mt-5 h-12 rounded-md'>Log Out</button>
+            </div>
+            : 
+            <div>
             <form >
                 <h1 className='text-3xl font-bold mb-3 text-gray-900'>Login</h1>
                 <span className=" my-6 text-sm font-medium "><span className='text-gray-500'>Don't have an account yet? </span><Link to={'/signup'} className='text-blue-800'>Sign up for free</Link></span>
@@ -27,10 +68,11 @@ const Login = () => {
             <div>
                 <p className='text-center my-5'>Or sign in using</p>
                 <div className='flex flex-col md:flex-row items-center gap-5'>
-                    <button className='button-login-github w-full md:w-1/2 h-12 rounded-md'>Log In via GitHub</button>
-                    <button className='button-login-google w-full md:w-1/2 h-12 rounded-md'>Log In via Google+</button>
+                    <button onClick={handleSignInWithGithub} className='button-login-github w-full md:w-1/2 h-12 rounded-md'>Log In via GitHub</button>
+                    <button onClick={handleSignInWithGoogle} className='button-login-google w-full md:w-1/2 h-12 rounded-md'>Log In via Google+</button>
                 </div>
             </div>
+        </div>}
         </div>
     );
 };
