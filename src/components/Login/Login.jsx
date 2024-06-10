@@ -4,7 +4,8 @@ import "./Login.css"
 
 const Login = () => {
     return (
-            <form className="max-w-sm mx-auto mt-32 mb-16">
+        <div className='w-4/5 md:max-w-sm mx-auto mt-32 mb-16'>
+            <form >
                 <h1 className='text-3xl font-bold mb-3 text-gray-900'>Login</h1>
                 <span className=" my-6 text-sm font-medium "><span className='text-gray-500'>Don't have an account yet? </span><Link to={'/signup'} className='text-blue-800'>Sign up for free</Link></span>
                 <div className="my-5">
@@ -21,15 +22,16 @@ const Login = () => {
                     </div>
                     <label for="remember" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
                 </div>
-                <button type="submit" className=" button-login text-white focus:outline-none font-normal rounded-sm text-lg md:w-full md:h-12 sm:w-auto px-5 py-2.5 text-center ">Login</button>
-                <div>
-                    <p className='text-center my-5'>Or sign in using</p>
-                    <div className='flex gap-5'>
-                        <button className='button-login-facebook w-1/2 h-12 me-4 rounded-md'>Log In via Facebook</button>
-                        <button className='button-login-google w-1/2 h-12 rounded-md'>Log In via Google+</button>
-                    </div>
-                </div>
+                <button type="submit" className=" button-login text-white focus:outline-none font-normal rounded-sm text-lg w-full md:h-12 px-5 py-2.5 text-center ">Login</button>
             </form>
+            <div>
+                <p className='text-center my-5'>Or sign in using</p>
+                <div className='flex flex-col md:flex-row items-center gap-5'>
+                    <button className='button-login-github w-full md:w-1/2 h-12 rounded-md'>Log In via GitHub</button>
+                    <button className='button-login-google w-full md:w-1/2 h-12 rounded-md'>Log In via Google+</button>
+                </div>
+            </div>
+        </div>
     );
 };
 

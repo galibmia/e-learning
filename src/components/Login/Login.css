@@ -7,14 +7,14 @@
     background-color: transparent;
     border: 2px solid #00FF84;
 }
-.button-login-facebook{
-    color: #1967D2;
+.button-login-github{
+    color: #000000;
     background-color: transparent;
-    border: 2px solid #1967D2;
+    border: 2px solid #020202;
 }
 
-.button-login-facebook:hover{
-    background-color: #1967D2;
+.button-login-github:hover{
+    background-color: #101010;
     color: aliceblue;
 }
 .button-login-google{
