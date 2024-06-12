@@ -1,4 +1,9 @@
+import { createUserWithEmailAndPassword, getAuth } from 'firebase/auth';
 import React, { useState } from 'react';
+import app from '../../firebase/firebase.init';
+import { Link } from 'react-router-dom';
+
+const auth = getAuth(app)
 
 const SignUp = () => {
     const [formData, setFormData] = useState({
@@ -10,6 +15,7 @@ const SignUp = () => {
         password: '',
         remember: false,
     });
+    const [success, setSuccess] = useState('');
 
     const [submittedData, setSubmittedData] = useState()
 
@@ -20,20 +26,34 @@ const SignUp = () => {
             [id]: type === 'checkbox' ? checked : value,
         }));
     };
+    const handleCreateUserUsingEmailAndPassword = (email, password) => {
+        createUserWithEmailAndPassword(auth, email, password)
+            .then(result => {
+                const user = result.user;
+                setSuccess('Successfully Registered');
+            })
+            .catch(error => {
+                console.log(error);
+            })
+
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+        handleCreateUserUsingEmailAndPassword(email, password);
         setSubmittedData(formData);
     };
 
     return (
         <div className='w-2/4 mx-auto my-32'>
-            {submittedData ? 
-            <div>
-                <h1 className='text-center text-xl md:text-4xl font-semibold mb-5'>Welcome {submittedData.first_name}</h1>
-                <p className='text-center text-sm md:text-lg text-green-700 font-semibold'>You have register successfully</p>
-            </div>
-            :
+            {submittedData ?
+                <div>
+                    <h1 className='text-center text-xl md:text-4xl font-semibold mb-5'>Welcome {submittedData.first_name}</h1>
+                    <p className='text-center text-sm md:text-lg text-green-700 font-semibold'>You have register successfully</p>
+                </div>
+                :
                 <form onSubmit={handleSubmit}>
                     <div className="grid gap-6 mb-6 md:grid-cols-2">
                         <div>
@@ -89,7 +109,6 @@ const SignUp = () => {
                                 placeholder="123-45-678"
                                 value={formData.phone}
                                 onChange={handleChange}
-                                required
                             />
                         </div>
                     </div>
@@ -100,6 +119,7 @@ const SignUp = () => {
                         <input
                             type="email"
                             id="email"
+                            name="email"
                             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             placeholder="john.doe@company.com"
                             value={formData.email}
@@ -114,6 +134,7 @@ const SignUp = () => {
                         <input
                             type="password"
                             id="password"
+                            name="password"
                             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             placeholder="•••••••••"
                             value={formData.password}
@@ -144,6 +165,11 @@ const SignUp = () => {
                         Sign Up
                     </button>
                 </form>
+            }
+            {
+                success && <div>
+                    <p className='text-center p-4'><Link className='text-blue-600 hover:underline dark:text-blue-500' to="/login">Login Now</Link></p>
+                    </div>
             }
         </div>
     );

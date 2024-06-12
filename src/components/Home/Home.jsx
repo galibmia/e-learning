@@ -14,7 +14,7 @@ const Home = () => {
 
     return (
         <div>
-            <div className='hero-bg-img mt-14'>
+            <div className='hero-bg-img mt-0 md:mt-14'>
                 <Hero></Hero>
             </div>
             <div className='my-20'>
